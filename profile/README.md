@@ -20,6 +20,32 @@ AI 기반 자동 탐지와 규정 연계 의사결정 시스템을 통해 <br>
 
 ## 2. 시연 및 숏폼 영상
 
+<table>
+  <tr>
+    <td><b>숏폼 소개 영상</b></td>
+    <td><b>시연 영상</b></td>
+  </tr>
+
+  <tr>
+    <td>
+      <video src="https://github.com/user-attachments/assets/6a91947f-bb77-4f36-a45e-00484991fd22"
+             controls
+             autoplay
+             loop
+             width="400">
+      </video>
+    </td>
+    <td>
+      <video src="https://github.com/user-attachments/assets/7d39af18-35d6-4701-9518-67204b4a8258"
+             controls
+             autoplay
+             loop
+             muted
+             width="400">
+      </video>
+    </td>
+  </tr>
+</table>
 
 ## 3. 시스템 구성
 | 시스템 구성도|
