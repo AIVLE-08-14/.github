@@ -54,14 +54,13 @@ AI 기반 자동 탐지와 규정 연계 의사결정 시스템을 통해 <br>
 
 ### 아키텍처 개요
 
-| Layer              | 기술 스택                                                          | 설계 및 구현 포인트                                                                                         |
+| 계층 - 클릭시 상세보기   | 기술 스택                                                          | 설계 및 구현 포인트                                                                                         |
 | ------------------ | ---------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| **Frontend**       | React<br>TypeScript<br>OpenLayers<br>React Query                 | • GIS 기반 철도 노선 및 결함 위치 시각화<br>• 실시간 상태 반영 UI 구조<br>• 서버 상태 관리 최적화                                   |
-| **Backend**        | Kotlin<br>Spring Boot<br>Spring Security                         | • 세션 기반 인증/인가 구조<br>• Scheduler + Worker 패턴 적용<br>• REST API 모듈 분리 설계                               |
-| **AI Server**      | YOLO-LAF<br>LWM<br>C2f-SCConv<br>EMA                             | • 시설물 결함 탐지 모델 커스터마이징<br>• 연산량 감소 및 탐지 성능 개선<br>• HuggingFace 기반 모델 버전 관리<br>• 피드백 기반 파인튜닝 파이프라인 구축 |
-| **LLM-RAG Server** | Gemini API<br>Vector DB<br>RAG                                   | • 규정 문서 벡터화 및 검색 구조 설계<br>• 규정 기반 유지보수 조치 권고 생성<br>• 보고서 형식 응답 구조화                                  |
-| **Cloud**          | AWS EC2<br>AWS S3<br>CloudFront<br>ECR<br>CodeBuild / CodeDeploy | • 서버 역할 분리 아키텍처<br>• CDN 기반 파일 제공 구조<br>• CI/CD 자동 배포 파이프라인 구축                                      |
-
+| [**Frontend**](https://github.com/AIVLE-08-14/raildock-front)       | React<br>TypeScript<br>OpenLayers<br>React Query                 | • GIS 기반 철도 노선 및 결함 위치 시각화<br>• 실시간 상태 반영 UI 구조<br>• 서버 상태 관리 최적화                                   |
+| [**Backend**](https://github.com/AIVLE-08-14/raildock-server)        | Kotlin<br>Spring Boot<br>Spring Security                         | • 세션 기반 인증/인가 구조<br>• Scheduler + Worker 패턴 적용<br>• REST API 모듈 분리 설계                               |
+| [**Cloud**](https://github.com/AIVLE-08-14/raildock-server)          | AWS EC2<br>AWS S3<br>CloudFront<br>ECR<br>CodeBuild / CodeDeploy | • 서버 역할 분리 아키텍처<br>• CDN 기반 파일 제공 구조<br>• CI/CD 자동 배포 파이프라인 구축                                     |
+| [**Vision Model Server** ](https://github.com/AIVLE-08-14/raildock_Vision_AI)     | YOLO-LAF<br>LWM<br>C2f-SCConv<br>EMA                             | • 시설물 결함 탐지 모델 커스터마이징<br>• 연산량 감소 및 탐지 성능 개선<br>• HuggingFace 기반 모델 버전 관리<br>• 피드백 기반 파인튜닝 파이프라인 구축 |
+| [**LLM-RAG Server**](https://github.com/AIVLE-08-14/raildock_RAG_LLM) | Gemini API<br>Vector DB<br>RAG                                   | • 규정 문서 벡터화 및 검색 구조 설계<br>• 규정 기반 유지보수 조치 권고 생성<br>• 보고서 형식 응답 구조화                                  |
 
 ## 4. 주요 기능
 
